@@ -1,9 +1,3 @@
-import { Link } from "../router/Link";
+const LandingPage = () => <div>landingPage</div>;
 
-const Home = () => (
-  <div>
-    <Link to="/posts/1">asd</Link>
-  </div>
-);
-
-export default Home;
+export default LandingPage;
