@@ -33,7 +33,6 @@ const ArticleCardContainer = styled.li`
   > header {
     color: #333;
 
-    font-family: SUIT;
     font-size: 18px;
     font-style: normal;
     font-weight: 700;
@@ -43,7 +42,6 @@ const ArticleCardContainer = styled.li`
     color: #646464;
     margin-top: 12px;
 
-    font-family: SUIT;
     font-size: 14px;
     font-style: normal;
     font-weight: 500;

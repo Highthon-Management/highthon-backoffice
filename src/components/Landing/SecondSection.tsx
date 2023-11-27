@@ -26,7 +26,6 @@ const Title = styled.h2`
   margin-top: 34px;
 
   color: #000;
-  font-family: SUIT;
   font-size: 28px;
   font-style: normal;
   font-weight: 700;
@@ -36,7 +35,6 @@ const Title = styled.h2`
 const Summary = styled.p`
   color: #000;
 
-  font-family: SUIT;
   font-size: 18px;
   font-style: normal;
   font-weight: 500;
@@ -49,7 +47,6 @@ const WhatIsHighthon = styled(Link)`
 
   margin-top: 28px;
 
-  font-family: SUIT;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;

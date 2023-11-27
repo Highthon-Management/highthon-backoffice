@@ -25,7 +25,6 @@ const ThirdSection = () => {
 const Title = styled.h2`
   color: #000;
 
-  font-family: SUIT;
   font-size: 28px;
   font-style: normal;
   font-weight: 700;
@@ -37,7 +36,6 @@ const Summary = styled.p`
 
   color: #000;
 
-  font-family: SUIT;
   font-size: 18px;
   font-style: normal;
   font-weight: 500;

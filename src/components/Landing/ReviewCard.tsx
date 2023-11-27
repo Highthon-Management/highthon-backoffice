@@ -24,7 +24,6 @@ const ReviewCardContainer = styled.li`
 
   header {
     color: #333;
-    font-family: SUIT;
     font-size: 18px;
     font-style: normal;
     font-weight: 700;
@@ -33,7 +32,6 @@ const ReviewCardContainer = styled.li`
 
   p {
     color: #646464;
-    font-family: SUIT;
     font-size: 14px;
     font-style: normal;
     font-weight: 500;

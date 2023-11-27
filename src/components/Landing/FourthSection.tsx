@@ -38,7 +38,6 @@ const Title = styled.h2<{
   color: #000;
 
   margin-top: ${({ marginTop }) => marginTop}px;
-  font-family: SUIT;
   font-size: 28px;
   font-style: normal;
   font-weight: 700;

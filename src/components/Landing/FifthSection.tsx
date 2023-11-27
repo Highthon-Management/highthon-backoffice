@@ -20,7 +20,7 @@ const Title = styled.h2`
   color: #000;
 
   margin-top: 34px;
-  font-family: SUIT;
+
   font-size: 28px;
   font-style: normal;
   font-weight: 700;
@@ -31,7 +31,6 @@ const Summary = styled.p`
   margin-top: auto;
   color: #000;
 
-  font-family: SUIT;
   font-size: 18px;
   font-style: normal;
   font-weight: 500;
