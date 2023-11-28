@@ -132,6 +132,7 @@ html,
   }
   * {
     box-sizing: border-box;
+    font-family: 'SUIT', sans-serif;
   }
   body {
     font-weight: 300;
