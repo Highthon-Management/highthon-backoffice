@@ -32,13 +32,27 @@ const LayoutContainer = styled.section<LandingLayoutProps>`
 
 const Wrapper = styled.div<LandingLayoutProps>`
   width: 100%;
+  max-width: 100vw;
+  overflow: hidden;
   height: 100%;
-  padding: 61px 28px 0 28px;
+  padding-top: 61px;
 
   display: flex;
   flex-direction: column;
   position: relative;
   z-index: 99;
+  > * {
+    padding: 0 28px;
+  }
+  > .lottie {
+    position: absolute;
+
+    left: 50%;
+    transform: translate(-50%, 0);
+    padding: 0 0;
+    width: 500px;
+    height: 400px;
+  }
 
   padding-bottom: ${(props) => props.paddingBottom}px;
 `;

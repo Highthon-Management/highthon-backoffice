@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 import LandingLayout from './Layout';
 import { Link } from 'react-router-dom';
+import Lottie from 'lottie-react';
+import PaperAirPlane from '../../assets/page2.json';
 
 const SecondSection = () => {
   return (
@@ -12,6 +14,7 @@ const SecondSection = () => {
         <br />
         역시 하이톤!
       </Title>
+      <LottieSection width={'100%'} loop={true} autoPlay={true} animationData={PaperAirPlane} className="lottie" />
       <Summary>
         하이톤은 고등학생 대상
         <br />
@@ -30,6 +33,10 @@ const Title = styled.h2`
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+`;
+
+const LottieSection = styled(Lottie)`
+  margin-top: 123px;
 `;
 
 const Summary = styled.p`

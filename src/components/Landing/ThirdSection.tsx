@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 import LandingLayout from './Layout';
 import BackgroundCloud from './BackgroundCloud';
+import Lottie from 'lottie-react';
+import Figma from '../../assets/page3.json';
 
 const ThirdSection = () => {
   return (
@@ -10,6 +12,7 @@ const ThirdSection = () => {
         <br />
         괜찮아요!
       </Title>
+      <LottieSection width={539} height={446} loop={true} autoPlay={true} animationData={Figma} className="lottie" />
       <Summary>
         2017년부터 시작해, <br />
         이번 행사로 9회를 맞은 하이톤. <br />
@@ -29,6 +32,10 @@ const Title = styled.h2`
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+`;
+
+const LottieSection = styled(Lottie)`
+  margin-top: 30px;
 `;
 
 const Summary = styled.p`
