@@ -68,5 +68,9 @@
       "prettier --write",
       "eslint --cache --fix"
     ]
-  }
+  },
+  "main": "index.js",
+  "repository": "https://github.com/Highthon-Management/highthon-backoffice.git",
+  "author": "je355 <chaeeehui@gmail.com>",
+  "license": "MIT"
 }
