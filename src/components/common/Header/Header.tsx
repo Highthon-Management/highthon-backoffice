@@ -1,5 +1,5 @@
 import React from 'react';
-import hightonLogo from '../image/hightonLogo.svg';
+import hightonLogo from '../../../logo.svg';
 import { StyledHeader, StyledHeaderImg, StyledBookBox, StyledBookText } from '../../../styles/Header';
 
 const Header: React.FC = () => {
