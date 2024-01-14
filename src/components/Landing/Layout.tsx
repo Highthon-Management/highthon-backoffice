@@ -1,11 +1,13 @@
 import { ReactElement } from 'react';
 import styled from 'styled-components';
+import { useResponsive } from '../../hooks/useResponsive';
 
 interface LandingLayoutProps {
   children: React.ReactNode;
   backgroundColor?: string;
   paddingBottom?: number;
   backgroundImage?: ReactElement;
+  isMobile?: boolean;
 }
 
 const LandingLayout = ({
@@ -14,28 +16,31 @@ const LandingLayout = ({
   paddingBottom = 0,
   backgroundImage,
 }: LandingLayoutProps) => {
+  const { isMobile } = useResponsive();
+
   return (
     <LayoutContainer backgroundColor={backgroundColor}>
-      <Wrapper paddingBottom={paddingBottom}>{children}</Wrapper>
+      <Wrapper isMobile={isMobile} paddingBottom={paddingBottom}>
+        {children}
+      </Wrapper>
       {backgroundImage}
     </LayoutContainer>
   );
 };
 
 const LayoutContainer = styled.section<LandingLayoutProps>`
+  position: relative;
   width: 100%;
   height: 100vh;
   position: relative;
-
   background-color: ${(props) => props.backgroundColor};
 `;
 
 const Wrapper = styled.div<LandingLayoutProps>`
   width: 100%;
-  max-width: 100vw;
   overflow: hidden;
   height: 100%;
-  padding-top: 61px;
+  ${({ isMobile }) => !isMobile && 'padding-top: 61px;'};
 
   display: flex;
   flex-direction: column;
