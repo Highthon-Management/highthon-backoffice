@@ -31,7 +31,7 @@ const Title = styled.h2`
 `;
 
 const LottieSection = styled(Lottie)`
-  margin-top: 90px;
+  margin-top: 150px;
 `;
 
 const Summary = styled.p`

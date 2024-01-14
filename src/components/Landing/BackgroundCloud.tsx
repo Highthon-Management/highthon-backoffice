@@ -11,7 +11,7 @@ const Background = styled.div`
 
   bottom: 0px;
   position: absolute;
-  width: 100vw;
+  width: 100%;
   height: 100%;
 `;
 
